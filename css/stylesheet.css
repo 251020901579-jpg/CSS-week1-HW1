@@ -10,15 +10,21 @@ body {
 header {
     background-color: #1a365d;
     padding: 20px;
+    
 }
 
 nav {
-    background-color: #2b6cb0;
+    background-color: #e3e7ec;
     padding: 10px;
+    display: inline-block;
+    width: 80%;
+}
+nav img {
+  width: 10%;
 }
 
 main {
-    background-color: #ffffff;
+    background-color: #fefefe;
     font-size: 1.1rem;
     padding: 20px;
     margin: 20px auto;
@@ -33,11 +39,11 @@ footer {
     margin-top: 20px;
 }
 
-li {
+/*li {
     display: inline-block;
     width: 140px;
     text-align: center;
-}
+}*/
 
 h1 {
     text-align: center;
@@ -47,4 +53,19 @@ h1 {
 p {
     line-height: 1.6;
     margin-bottom: 15px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 40%); 
+  justify-content: space-around;
+  align-items: center;
+  row-gap: 20px; 
+}
+.grid img {
+  width: 100%;
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
